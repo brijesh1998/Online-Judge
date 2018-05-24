@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+    <listener>
+        <description>ServletContextListener, HttpSessionListener, HttpSessionAttributeListener</description>
+        <listener-class>com.oj.listeners.Listener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.oj.serv.register</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>validate</servlet-name>
+        <servlet-class>com.oj.serv.validate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>com.oj.serv.update</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.oj.serv.logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>submit</servlet-name>
+        <servlet-class>com.oj.serv.submit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>validate</servlet-name>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>submit</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -43,9 +43,9 @@ Contributor(s):
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://ojdb.calgt6zkqtq8.ap-south-1.rds.amazonaws.com:3306/OnlineJudge?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
-    <property name="hibernate.connection.username">ojdbroot</property>
-    <property name="hibernate.connection.password">root123p</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/OnlineJudge?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123</property>
     <mapping class="com.oj.domain.Admin"/>
     <mapping class="com.oj.domain.CampusChapter"/>
     <mapping class="com.oj.domain.User"/>
